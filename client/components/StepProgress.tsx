@@ -161,7 +161,7 @@ const StepProgress: React.FC<IHeaderProps> = ({step, userLat, userLong, userId})
         </Typography>
         </CardContent>
         <CardActions>
-          {/* {closeEnough  && step.in_progress && ( */}
+          {closeEnough  && step.in_progress && (
             <div>
               <Button
                 onClick={(e) => navigate('/ar', {state: { step: step, userId: userId}})}
@@ -170,7 +170,7 @@ const StepProgress: React.FC<IHeaderProps> = ({step, userLat, userLong, userId})
                 > Solve Step
               </Button>
             </div>
-          {/* )} */}
+          )}
           {sizeWarning && (<Alert severity="warning">Your image is too big</Alert>)}
         </CardActions>
     </Card>
