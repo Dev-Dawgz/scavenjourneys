@@ -63,14 +63,14 @@ const MarkerEntity: React.FC<MarkerEntityProps> = ({  stepName, latitude, longit
       material="color: red; shader: flat">
     </a-cursor> */}
     <a-gui-cursor
-              id="cursor"
-						  // raycaster="objects: [gui-interactable]"
-						  fuse="true"
-               fuse-timeout="5000"
-						  color="red"
-						  hover-color="white"
-						  active-color="red"
-						  design="reticle"
+	  id="cursor"
+	  // raycaster="objects: [gui-interactable]"
+	  fuse="true"
+	  fuse-timeout="5000"
+	  color="red"
+	  hover-color="white"
+	  active-color="red"
+	  design="reticle"
      >
     </a-gui-cursor>
   </a-camera>
