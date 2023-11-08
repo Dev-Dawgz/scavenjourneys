@@ -215,7 +215,7 @@ const StepProgress: React.FC<IHeaderProps> = ({step, userLat, userLong, userId, 
         </CardContent>
         )}
 
-          { inProgress && closeEnough && deviceType !== 'iPhone' && deviceType !== 'ios Device' &&  (
+          { inProgress && closeEnough && deviceType === 'iPhone' (
                 <Box>
                  <Button component="label" variant="contained" startIcon={<CameraAltRoundedIcon />}>
                 Solve Step
@@ -230,7 +230,7 @@ const StepProgress: React.FC<IHeaderProps> = ({step, userLat, userLong, userId, 
 
                )}
 
-        { inProgress && closeEnough && (
+        { inProgress && closeEnough && deviceType === 'Andriod10k' (
 
             <Box>
               <MarkerEntity step={step} setImage={setImage} setInProgress={setInProgress} setSizeWarning={setSizeWarning} giveStepsTakenAchievement={giveStepsTakenAchievement} handleJourneyClick={handleJourneyClick}></MarkerEntity>
